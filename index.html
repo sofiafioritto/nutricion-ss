@@ -1,88 +1,117 @@
 <!DOCTYPE html>
 <html lang="en">
-
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin><link href="https://fonts.googleapis.com/css2?family=Courgette&family=Dancing+Script&family=Kreon&family=Merienda:wght@300&family=Simonetta&display=swap" rel="stylesheet">
-    <link href="https://fonts.googleapis.com/css2?family=Questrial&display=swap" rel="stylesheet">
-<link rel="stylesheet" href="./css/style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin><link href="https://fonts.googleapis.com/css2?family=Courgette&family=Dancing+Script&family=Kreon&family=Marck+Script&family=Merienda:wght@300&family=Noto+Serif+SC:wght@200;700&family=Simonetta&display=swap" rel="stylesheet">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-rbsA2VBKQhggwzxH7pPCaAqO46MgnOM80zW1RWuH61DGLwZJEdK2Kadq2F9CUG65" crossorigin="anonymous">
+    <link rel="stylesheet" href="./Css/style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css">
+
     <title>Nutrición SS</title>
 </head>
+<body>
 
-    
-    <body>
-        <div class="contenedor"> 
-        <header>
-    
-            <div class="logo">
-             <img src="./Assets/Imagenes/LOGO FINAL.png" alt="logo nutrición">
+    <!-- Encabezado -->
+   
+    <header class="container-fluid">
+
+        <div id="header" class="row h-auto">
+
+            <div class="d-flex justify-content-center col" >
+                <img src="./Assets/Images/LOGO FINAL.png" alt="logo" width="180" class="img-logo">
             </div>
-    
-            <div class="textoLogo">
-                <h2>Nutrición</h2>
-                <h3 id="texto2"> Basada en plantas </h3>
+
+            <div class="d-flex justify-content-center align-items-center col">
+                <h2 id="titulo1">Nutrición <br>
+                    Plant Based</h2>
             </div>
-    
-            <nav class="ulNav">
-                <ul class="resetList">
-                    <li class="ulNav__li"><a href="./index.html">Home</a></li>
-                    <li class="ulNav__li"><a href="./Pages/Sobre mi.html">Sobre Mi</a></li>
-                    <li class="ulNav__li"><a href="./Pages/Recetas.html">Recetas</a></li>
-                    <li class="ulNav__li"><a href="./Pages/Servicios.html">Servicios</a></li>
-                    <li class="ulNav__li"><a href="./Pages/Contacto.html">Contacto</a></li>
-                    <li class="ulNav__li"><a href="https://www.instagram.com/nutricion.ss" target="_blank">Instagram</a></li>
-                </ul>
+
+            <div class="collapse" id="navbarToggleExternalContent">
+                <div id="menuDesplegable" >
+                    <ul>
+                        <li type="none" class="menu1"> <a href="./index.html">Home</a> </li>
+                        <li type="none"> <a href="./Pages/Sobre Mi.html">Sobre Mí</a> </li>
+                        <li type="none"> <a href="./Pages/Recetas.html">Recetas</a> </li>
+                        <li type="none"> <a href="./Pages/Servicios.html">Servicios</a> </li>
+                        <li type="none"> <a href="./Pages/Eventos.html">Eventos</a> </li>
+                        <li type="none"> <a href="./Pages/Contacto.html">Contacto</a> </li>
+                    </ul>
+                </div>
+              </div>
+
+            <nav  id= "navBar" class="navbar-dark">
+                <div class="container">
+                  <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarToggleExternalContent" aria-controls="navbarToggleExternalContent" aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                  </button>
+                </div>
             </nav>
-    
-        </header>
-    
-    
-        <main>
-    
-            <aside class="img">
-                <img src="./Assets/Imagenes/plato plantbased.jpeg" alt="plato comida">
-            </aside>
-    
-        <section id="sectionGrilla">                 
-            <p class="texto1">
-                Mi nombre es Sofía. Soy Lic. en Nutrición y Magister en Nutrición Vegetariana. <br>
-                Me especializo en Alimentación Basada en Plantas y mi objetivo es ayudarte a que logres una alimentación más intuitiva, completa y balanceada. <br>
-                Dentro de esta página encontrarás información útil para que puedas iniciar con un nuevo estilo de vida. <br>
-                <br>
-                En el apartado recetas, encontraras ideas fáciles para que puedas incorporar nuevos alimentos cada día. <br>
-                Podes solicitar turno ya sea de manera presencial o virtual en el apartado de Contacto. <br>
-                Te espero en mi  <a href="https://www.instagram.com/nutricion.ss" target="_blank"> Instagram</a>  para que te enteres de todas las novedades, eventos, recetas y más! <br>
-                Bienvenidos! <br>
-                <br>
-                Lic. Sofía Fioritto <br>
-                MN: 7739 - MP: 3054
-                </p>
-        </section>
 
-        </main>
+        </div>
+
+    </header>
+
+<!-- MAIN -->
     
-        <footer>
 
-                <h2 class="texto2"> CONTACTO </h2>   
+  <main class="mainHome">
 
-            <div>
+<section class="texto1">
+    <p>
+        Mi nombre es Sofía, soy Lic. en Nutrición y especialista en alimentación basada en plantas. Mi objetivo es ayudarte a que puedas trasformar tu alimentación a una más natural y consciente. <br>
+        Dentro de esta página encontrarás información que seguramente te sea útil para iniciar el cambio que estas esperando. <br>
+        En el apartado <a href="./Pages/Servicios.html">Servicios</a> podes encontrar información sobre las modalidades de consulta que ofrecemos.
+        En <a href="./Pages/Recetas.html">Recetas</a> te ayudamos a inspirarte para que pruebes cosas nuevas! <br>
+        No dudes en contactarnos presionando <a href="./Pages/Contacto.html">aquí</a> para evacuar todas tus dudas.
+        Espero que disfrutes el contenido de esta página. <br>
+        <br>
+        Lic. Sofía Fioritto <br>
+        MN: 7739 - MP: 3054
+    </p>
+</section>    
+
+<section id="misImagenes">
+    <div class="caja1">
+        <img src="./Assets/Images/carousel1.JPG" alt="imagenInst" width="200px" class="animate__animated animate__rollIn"  >
+    </div>
+<br>
+    <div class="caja2">
+        <img src="./Assets/Images/carousel2.JPG" alt="imagenInst" width="200px" class="animate__animated animate__rollIn">
+    </div>
+    <br>
+    <div class="caja3">
+        <img src="./Assets/Images/carousel3.JPG" alt="imagenInst" width="200px" class="animate__animated animate__rollIn">
+    </div>
+</section>
+
+
+    </main>
+
+<!-- FOOTER -->
+
+    <footer>
+
+
+            <div class="redes">
                 <a href="https://www.instagram.com/nutricion.ss/" target="_blank" >
-                    <img src="./Assets/Imagenes/Instagram_logo_2016.svg.webp" alt="logo instagram" width=50 class="imgLogo">
+                    <img src="./Assets/Images/Instagram_logo_2016.svg.webp" alt="logo instagram" width=50>
                 </a>
                 
                 <a href="https://wa.me/1154676578" target="_blank" >
-                    <img src="./Assets/Imagenes/WhatsApp-logo.png" alt="logo whatsapp" width="90" class="imgLogo">
+                    <img src="./Assets/Images/WhatsApp-logo.png" alt="logo whatsapp" width="90">
                 </a>
             </div>
        
-                <p class="direccion">
+            <div class="direccion">
+                <p>
                     Av. Luis Maria Campos 559, CABA.
                 </p>
+            </div>
+                
 
-        </footer>
-        </div>
-    </body>
-
+    </footer>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-kenU1KFdBIe4zVF0s0G1M5b4hcpxyD9F7jL+jjXkk+Q2h455rYXK/7HAuoJl+0I4" crossorigin="anonymous"></script>
+</body>
 </html>

@@ -1,544 +1,534 @@
+
 * {
     margin: 0;
     padding: 0;
 }
 
-.logo img{
-    height: 150px;
+/* HEADER */
+
+#header {
+    background-color: #f4eeed;
+    font-family: 'Noto Serif SC', serif !important;
 }
 
-body {
-    display: grid;
-    grid-template-columns: 1fr;
-    grid-template-rows: 0,5fr 1fr 0,5fr;
-    grid-template-areas: 
-    "header"
-    "main"
-    "footer";
+header img {
+    padding: 10px;
+    margin: 10px;
 }
 
-header {
-    grid-area: header;
-    background-color: #dddfd1;
-    width: 100vw;  
+#menuDesplegable{
+   background-color: #999b84a4;
+   margin: 10px;
+   padding: 20px;
+   font-family: 'Noto Serif SC', serif !important;
+}
+
+
+#navBar {
+    background-color: #999b84a4;
+    padding: 10px;
+}
+
+a {
+    text-decoration: none;
+    color: white;
+    font-weight: bold;
+}
+
+ a :hover {
+    color: black !important;
+ }
+
+ #servicios {
     display: flex;
     justify-content: space-around;
-    align-items: baseline;
-    min-height: 25vh;
+    margin: 50px;
+    padding: 50px;
+ }
+
+ .img-logo{
+    animation-name: move;
+    animation-duration: 5s;
+ }
+
+ @keyframes move {
+    from {
+        opacity: 0;
+    }to{
+        opacity: 1;
     }
+ }
 
-.logo {
-        display: flex;
-        justify-content: start;
-        margin: 15px;
-    }
-    
+ .animate__animated.animate__rollIn{
+    --animate-duration: 3s;
+ }
 
-.textoLogo {
-        display: flex;
-        flex-direction: column;        
-        font-size: 2rem;
-        position:absolute;
-        bottom: 82%; 
-        
-        }
-    
-#texto2 {
-        display: block;
-        position: relative;
-        font-family: 'Merienda', cursive;
-        font-size: 2rem;
-    }
+ .animate__animated.animate__slideInRight {
+    --animate-duration: 3s;
 
-.resetList a:link, a:visited, a:active {
-        text-decoration: none;
-        list-style-type: none;
-        color: black;
-        }
-
-.ulNav {
-            display: inline-block; 
-            position: relative;
-            right: 20%;
-            }
-    
-.ulNav__li{
-            display: inline-block; 
-            position: relative;
-            background-color: #a7c7be;
-            border: 1px;
-            flex-wrap: wrap;
-            display: inline;
-            padding: 5px;
-            }
-        
-        
-nav a:hover{
-            color:white;
-        }
-    
-main {
-            grid-area: main;
-            background-color: #ede9e3;
-            width: 100vw;
-            min-height: 95vh;
-            display: grid;
-            grid-template-columns: 1fr 1fr;
-            grid-template-rows: 1fr;
-            grid-template-areas: 
-            "section aside";
-        }
-        
-section {
-            grid-area: section;
-            font-family: 'Questrial', sans-serif;
-            justify-content: center;
-            margin: 20px;
-            display: flex;
-            font-size: 1.2rem;
-            text-align: justify;
-            padding: 10px;
-            line-height: 1.5;
-        }
-            
-aside {
-            grid-area: aside;
-            display: flex;
-            margin: 10px;
-            justify-content: center;
-            }
-        
-aside img {
-            height: 60%;
-        }
-        
-footer {
-            background-color: #9ba986;
-            grid-area: footer;
-            width: 100vw;
-            min-height: 25vh;
-        }
-        
-.imgLogo {
-            margin-right: 20px;
-            border-right: 20px;
-            display: inline;
-            position: relative;
-            left: 45%;
-        
-        }
-        
-.direccion{
-            display: flex;
-            font-family: 'Questrial', sans-serif;
-            margin-bottom: 10px;
-            margin-left: 10px;
-            justify-items: center;
-            justify-content: baseline;
-           
-        }
-
-.texto2 {
-            padding: 30px;
-            margin: 10px;
-            text-align: center;
-        } 
-
-
-#fotoSofi {
-    height: 450px;
-    display: inline-block;
-    top: 30%;  
-    position: absolute;    
-    flex-wrap: wrap;
-         }
+ }
+ 
+/* MAIN  */
 
 body {
     overflow-x: hidden;
-
 }
 
-
-#grillaRecetas{
+.mainHome {
+    background-color: #f8f8f4;
+    width: 100%;
+    height: 90%;
     display: grid;
     grid-template-columns: 1fr 1fr;
-    grid-template-rows: 1fr 1fr;
-    grid-template-areas: 
-    "sectUno sectDos"
-    "sectUno sectDos";
+    grid-template-rows: 1fr;
+    grid-template-areas:
+    "texto1 imagen1";
+    grid-column-gap: 10px;
 }
 
-.mainReceta {
-    height: 130vh;
-}
-
-.sectUno {
-    grid-area: sectUno;
-    display: flex;
-    flex-direction: column;
-    align-items: left;
-    font-size: 1rem;
-    margin-top: 0px;
-    padding-top: 0px;
-}
-
-
-.sectDos {
-    grid-area: sectDos;
-    display: flex;
-    flex-direction: column;
-    font-size: 1rem;
-}
-
-.sectUno img {
-    width: 250px;
-    /* margin: 10px; */
-    }
-    
-.sectDos img {
-    width: 200px;
-    }
-    
-.volverArriba {
-        text-align: justify;
-        display: inline-block;
-        background-color: #a7c7be;
-        padding: 10px;
-        margin: 10px;
-        position: relative;
-    }
-
-/* CONTACTO */
-
-.mainContacto {
-    height: 110vh;
-}
-
-#gridContacto {
-    display: grid;
-    grid-template-columns: 1fr;
-    grid-template-rows: 0.5fr 0.5fr;
-    grid-template-areas: 
-    "texto4"
-    "form";
-}
-
-
-.texto3 {
-    font-family: 'Questrial', sans-serif;
-    font-size: 1.2rem;
-    display: flex;
+.texto1 {
+    grid-area: texto1;
+    font-family: 'Noto Serif SC', serif;
+    margin: 15px;
+    padding: 10px;
+    flex-wrap: wrap;
     text-align: center;
-    margin: 40px;
-    line-height:1.2 ;
- }
+}
 
-.texto4 {
-    grid-area: texto4;
-    display: block;
-    text-align: left;
-    font-size: 1rem;
+ .imagen1 {
+    grid-area: imagen1;
+    margin: 10px;
+    padding: 10px;
+    width: 290px;
+    justify-self: center;
+
+}
+
+
+#fotoSofi {
+    width: 350px;
+}
+
+#texto2{
+    display: flex;
+}
+
+p a {
+    font-weight: 800;
     color: black;
-    margin: 20px;
-    padding: 20px;
-    font-family: 'Questrial', sans-serif;
-    line-height: 1.5;
+
+}
+
+.texto4{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    margin: 10px;
+    padding: 10px;
+    font-family: 'Noto Serif SC', serif;
+    text-align: center;
+
+}
+
+.form {
+    margin: 5px;
+    padding: 5px;
+    display: inline-block;
 }
 
 .btn {
-    display: inline-block;
-    background-color: #a7c7be;
+    background-color: #f4eeed;
     padding: 10px;
     margin: 10px;
-    position: relative;
-    left:5%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-weight: bold;
+
 }
 
-.enviar {
-    display: inline;
-    position: absolute;
-    top: 115%;
-}
-
-
-.form {
-    grid-area: form;
+#misImagenes {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
     margin: 20px;
-    padding: 20px;
-    display: block;
-   position: relative;
-
-}
-
-
-.textoTurnos{
-    font-family: 'Courier New', Courier, monospace;
-    font-size: 1rem;
-    margin: 20px;
-}
-
-
-/* SERVICIOS */
-
-.precio {
-    margin: 30px;
-}
-
-#grillaServicios{
-    display: grid;
-    grid-template-columns: 1fr;
-    grid-template-rows: 1fr 1fr 1fr;
-    grid-template-areas:
-    "div"
-    "div"
-    "div";
-}
-
-div {
-    grid-area: div;
-}
-
-
-.mainServicios {
-    min-height: 100%;
-} 
-
-.consulta {
-display: inline;
-position: absolute;
-left: 80%;
-top: 40%;
-}
-
-.consulta2 {
-    display: flex;
-    display: inline;
-    position: absolute;
-    left: 80%;
-    top: 80%;
-}
-
-.consulta3 {
-    display: flex;
-    display: inline;
-    position: absolute;
-    left: 80%;
-    top: 115%;
-}  
-
-
-/* BREAK POINTS */
-
-/* MAX */
-
-@media (max-width: 1200px) {
-    .textoLogo {
-        display: flex;
-        flex-direction: column;        
-        font-size: 2rem;
-        position:absolute;
-        bottom: 80%; 
-        }
-        
-        #texto2 {
-        display: flex;
-        flex-direction: column;        
-        font-size: 2rem;
-        }
-
-        .ulNav {
-            display: inline-block; 
-            position: relative;
-            right: 20%;
-            }
-    
-            .ulNav__li{
-            display: inline-block; 
-            position: relative;
-            }
-    
-}
-
-@media (max-width: 1024px) {
-    
-    header {
-        display: flex;
-    }
-
-    .textoLogo {
-    display: flex;
-    flex-direction: column;        
-    font-size: 2rem;
-    position:absolute;
-    bottom: 80%; 
-    }
-    
-    #texto2 {
-    display: flex;
-    flex-direction: column;        
-    font-size: 2rem;
-    }
-
-    .ulNav {
-        display: inline-block; 
-        position: relative;
-        right: 20%;
-        }
-
-        .ulNav__li{
-        display: inline-block; 
-        position: relative;
-        }
-
-}
-
-@media (max-width: 768px) {
-    header {
-        display: flex;
-    }
-
-    .textoLogo {
-    display: flex;
-    flex-direction: column;        
-    font-size: 2rem;
-    position:absolute;
-    bottom: 80%; 
-    }
-    
-    #texto2 {
-    display: flex;
-    flex-direction: column;        
-    font-size: 2rem;
-    }
-
-    .ulNav {
-        display: inline-block; 
-        position: relative;
-        right: 10%;
-        }
-
-        .ulNav__li{
-        display: inline-block; 
-        position: relative;
-        }
-
-        aside img {
-            height: 30%;
-        }
-
-
-    .texto1 {
-        display: flex;
-        flex-direction: column;
-        font-size: 0,5rem; }
-}
-
-    
-
-@media (max-width: 600px) {
-    header {
-        flex-direction: column;
-        min-height: 30vh;
-
-    }
-    .logo {
-        display: flex;
-        justify-content: center;
-        margin: 15px;
-        flex-direction: column;
-        flex-wrap: wrap;
-    }
-
-    .logo img {
-        height: 100px;
-    }
-
-    .ulNav {
-        display: inline-block; 
-        position: relative;
-        left: 15%;
-        }
-
-        .ulNav__li{
-        display: inline-block; 
-        position: relative;
-        }
-
-    .textoLogo {
-        display: inline-block;
-        position: absolute;
-        right: 20%;
-        top: 5%;
-        font-size: 2rem;
-
-    }
-    
-    aside img {
-        height: 25%;
-    }
-
-    .texto1 {
-        display: flex;
-        flex-direction: column;
-        font-size: 0,5rem;
-    }
- }
-
-@media (max-width: 300px) {
-    header {
-        flex-direction: column;
-        min-height: 30vh;
-        width: 100vh;
-
-    }
-
-    body {
-        min-width: 100vw;
-     }
-     
-     aside {
-         min-width: 100vw;
-     
-     }
-  
-
-    aside img {
-    
-        height: 20%;
-    }
-
-    
-}  
-    
-
-
-/* MIN */
-
-@media (min-width: 1200px) {
-    
-}
-
-@media (min-width: 1024px) {
    
 }
 
-@media (min-width: 768px) {
+
+#textoSofi{
+    display: flex;
+    text-align: justify;
+    margin: 50px;
+    font-family: 'Noto Serif SC', serif;
+
+}
+
+.panq{
+    font-family: 'Noto Serif SC', serif;
+    margin-top: 10px;
+ 
+}
+
+.pan{
+    font-family: 'Noto Serif SC', serif;
+    margin-top: 10px;
+
+}
+
+/* #contacto2{
+    display: flex;
+    justify-content: center;
+    width: 100%;
+    margin-top: 30px;
+    background-image: linear-gradient(
+        0deg,
+        rgba (0,0,0,0.5),
+        rgba (0,0,0,0.5)
+    ) 
+} */
+
+/* #contactanos{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    flex-direction: column;
+    height: 80vh;
+    background-image: linear-gradient(
+        0deg,
+        rgba(0,0,0,0.5),
+        rgba(0,0,0,0.5)
+    )
+    ,url("../Assets/Images/06_CONTACTO_VIVUS-612x344.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center center;
     
 }
 
-@media (min-width: 600px) {
+#contactanos2{
+    color: white;
+    font-size: 4rem;
+    font-weight: bold;
+} */
+
+#contactanos {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-top: 15px;
+    font-family: 'Noto Serif SC', serif;
+
+}
+
+#consultanos {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-top: 15px;
+    font-family: 'Noto Serif SC', serif;
+
+}
+
+/* #consultanos{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    flex-direction: column;
+    height: 80vh;
+    background-image: linear-gradient(
+        0deg,
+        rgba(0,0,0,0.5),
+        rgba(0,0,0,0.5)
+    )
+    ,url("../Assets/Images/comsut.png");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center center;
+    
+    
+}
+
+#consultanos2{
+    color: white;
+    font-size: 4rem;
+    font-weight: bold;
+} */
+
+ #formulario {
+    background-color: #a7c7be6b;
+ }
+
+ .consultaTexto{
+    font-family: 'Noto Serif SC', serif;
+    text-align: center;
+ }
+
+ .consultaTexto2{
+    font-weight: bold;
+    font-family: 'Noto Serif SC', serif;
+    text-align: center;
+    
+ }
+
+ .botonInfo{
+    background-color: #999b84a4;
+    font-weight: bold;
+    margin: 20px;
+    padding: 10px;
+ }
+
+.textoEvento{
+    font-family: 'Noto Serif SC', serif;
+    text-align: center;
+
+}
+
+.textoEvento2{
+    font-family: 'Noto Serif SC', serif;
+    text-align: center;
+    font-weight: bold;
+    padding: 15px;
+
+}
+
+.consultorio{
+    display: flex;
+    justify-content: center;
+    margin: 10px;
+    padding: 10px;
+}
+
+
+/* footer */
+
+footer {
+    background-color: #9ac17b85;
+    width: 100%;
+    min-height: 20vh;
+}
+
+.redes {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: row;
+    padding: 20px;
+
+}
+
+.direccion{
+    align-items: center;
+    display: flex;
+    justify-content: center;
+    font-family: 'Kreon', serif;
+    text-align: center;
+}
+
+/* BREAKPOINTS  */
+
+/* MAX WIDTH */
+
+@media (max-width: 1200px) {
   
 }
 
-@media (min-width: 300px) {
-
-body {
-   min-width: 100vw;
+@media (max-width: 1024px) {
+  
 }
 
-aside {
-    min-width: 100vw;
+
+@media (max-width: 768px){
+    header {
+        flex-direction: column;
+    }
+
+    .menuGenerico {
+        margin: 10px;
+    }
+
+
+#servicios {
+    justify-content: space-around;
+    margin: 10px;
+    padding: 10px;
+ }
+
 
 }
 
+@media (max-width: 600px){
+
+
+
+    #titulo1 {
+        font-size: 1.2rem;
+        text-align: center;
+     }
+
+    .menuGenerico {
+        margin: 10px;
+        text-align: center;
+    }
+
+    .mainHome{
+        display: flex;
+        flex-direction: column;
+    }
+
+    .texto1 {
+        display: flex;
+        flex-direction: column;
+    }
+
+    #fotoSofi{
+        display: block;
+
+       left:50%;
+    }
+
+    #servicios {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        margin: 10px;
+        padding: 10px;
+     }
+
+
+
+
 }
+
+@media (max-width: 320px){
+
+    #titulo1 {
+        font-size: 1.2rem;
+        text-align: center;
+     }
+
+    .menuGenerico {
+        margin: 10px;
+        text-align: center;
+    }
+
+    .mainHome{
+        display: flex;
+        flex-direction: column;
+    }
+
+    .texto1 {
+        display: flex;
+        flex-direction: column;
+    }
+    .imagen1 {
+        display: flex;
+        flex-direction: column;
+    }
+
+
+    #fotoSofi {
+        width: 290px;
+    }
+
+    #servicios {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        margin: 10px;
+        padding: 10px;
+     }
+
+
+}
+
+/* MIN-WIDTH */
+
+@media (min-width: 320px){
+ 
+    
+
+}
+
+@media (min-width: 600px){
+    .imagen1 {
+        display: flex;
+        flex-direction: column;
+        justify-self: center;
+    }  
+
+    #consultanos{
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        text-align: center;
+        flex-direction: column;
+        height: 80vh;
+        background-image: linear-gradient(
+            0deg,
+            rgba(0,0,0,0.5),
+            rgba(0,0,0,0.5)
+        )
+        ,url("../Assets/Images/comsut.png");
+        background-repeat: no-repeat;
+        background-size: cover;
+        background-position: center center;
+        
+        
+    }
+    
+    #consultanos2{
+        color: white;
+        font-size: 4rem;
+        font-weight: bold;
+    }
+
+    #contactanos{
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        text-align: center;
+        flex-direction: column;
+        height: 80vh;
+        background-image: linear-gradient(
+            0deg,
+            rgba(0,0,0,0.5),
+            rgba(0,0,0,0.5)
+        )
+        ,url("../Assets/Images/06_CONTACTO_VIVUS-612x344.jpg");
+        background-repeat: no-repeat;
+        background-size: cover;
+        background-position: center center;
+        
+    }
+    
+    #contactanos2{
+        color: white;
+        font-size: 4rem;
+        font-weight: bold;
+    }
+
+}
+
+@media (min-width: 768px){
+    .imagen1 {
+        display: flex;
+        flex-direction: column;
+        justify-self: start;
+    }  
+    
+}
+
+@media (min-width: 1024px){
+   
+}
+
+@media (min-width: 1200px){
+  
+}
+
+
+

@@ -1,116 +1,159 @@
 <!DOCTYPE html>
 <html lang="en">
-
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin><link href="https://fonts.googleapis.com/css2?family=Courgette&family=Dancing+Script&family=Kreon&family=Merienda:wght@300&family=Simonetta&display=swap" rel="stylesheet">
-    <link href="https://fonts.googleapis.com/css2?family=Questrial&display=swap" rel="stylesheet">
-<link rel="stylesheet" href="../css/style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin><link href="https://fonts.googleapis.com/css2?family=Courgette&family=Dancing+Script&family=Kreon&family=Marck+Script&family=Merienda:wght@300&family=Noto+Serif+SC:wght@200;700&family=Simonetta&display=swap" rel="stylesheet">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-rbsA2VBKQhggwzxH7pPCaAqO46MgnOM80zW1RWuH61DGLwZJEdK2Kadq2F9CUG65" crossorigin="anonymous">
+    <link rel="stylesheet" href="../Css/style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css">
+
     <title>Recetas</title>
-
 </head>
+<body class="contenedor">
 
-<body>
+    <header class="container-fluid">
 
-<header> 
-    <div class="logo">
-        <img src="../Assets/Imagenes/LOGO FINAL.png" alt="logo nutrición"> 
-       </div>
-      
-       <div class="textoLogo">
-           <h2>Nutrición</h2> 
-           <h3 id="texto2"> Basada en plantas </h3>
-       </div>
-          
-       <nav class="ulNav">
-           <ul class="resetList">
-               <li class="ulNav__li"><a href="../index.html">Home</a></li>
-               <li class="ulNav__li"><a href="./Sobre mi.html">Sobre Mi</a></li>
-               <li class="ulNav__li"><a href="./Recetas.html">Recetas</a></li>
-               <li class="ulNav__li"><a href="./Servicios.html">Servicios</a></li>
-               <li class="ulNav__li"><a href="./Contacto.html">Contacto</a></li>
-               <li class="ulNav__li"><a href="https://www.instagram.com/nutricion.ss" target="_blank">Instagram</a></li>
-           </ul>
-       </nav> 
+        <div id="header" class="row h-auto">
 
-</header>
+            <div class="d-flex justify-content-center col">
+                <img src="../Assets/Images/LOGO FINAL.png" alt="logo" width="180" class="img-logo">
+            </div>
 
-<main id="grillaRecetas" class="mainReceta">
- 
-        <section class="sectUno">
-            <h3 class="tituloPanq"> Panqueques </h3>
-            <img src="../Assets/Imagenes/IMG_5121 2.JPG" alt="Panqueques" width="300">   
-            <p> <strong> Ingredientes:  </strong> 
-            <ul> 
-                <li type="circle">2 huevos (o sustituto)</li>
-                <li type="circle">1 banana mediana</li>
-                <li type="circle">1 y 1/2 taza de avena instantánea</li>
-                <li type="circle">1/2 taza de leche a elección</li>
-                <li type="circle">Extracto de vainilla</li>
-                <li type="circle">Polvo de hornear</li>
-            </ul>
-            <br>
-            <p> Pasos: </p> 
-            <br>
-            <ol type="1">
-                <li>Mezclar o licuar todos los ingredientes.</li>
-                <li>Calentar una sartén antiadherente e ir volcando la preparación de a poco.</li>
-                <li>Cocinar vuelta y vuelta y servir.</li>
-            </ol>
-            <br>
-            Son ideales para acompañar con fruta y pasta de maní.</p>
+            <div class="d-flex justify-content-center align-items-center col">
+                <h2 id="titulo1" >Nutrición <br>
+                    Plant Based</h2>
+            </div>
+
+            <div class="collapse" id="navbarToggleExternalContent">
+                <div id="menuDesplegable" >
+                    <ul>
+                        <li type="none"> <a href="../index.html">Home</a> </li>
+                        <li type="none"> <a href="../Pages/Sobre Mi.html">Sobre Mí</a> </li>
+                        <li type="none"> <a href="../Pages/Recetas.html">Recetas</a> </li>
+                        <li type="none"> <a href="../Pages/Servicios.html">Servicios</a> </li>
+                        <li type="none"> <a href="../Pages/Eventos.html">Eventos</a> </li>
+                        <li type="none"> <a href="../Pages/Contacto.html">Contacto</a> </li>
+                    </ul>
+                </div>
+              </div>
+
+            <nav  id= "navBar" class="navbar-dark">
+                <div class="container">
+                  <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarToggleExternalContent" aria-controls="navbarToggleExternalContent" aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                  </button>
+                </div>
+            </nav>
+
+        </div>
+
+    </header>
     
-            </section>
-  
+<main class="container-fluid">
 
-    <section class="sectDos"> 
-        <h3 class="tituloPanq"> Pan Integral  </h3>
-        <img src="../Assets/Imagenes/IMG_5154.JPG" alt="Pan Integral" width="300">    
+    <section class="row">
+
+        <div class="col-md-6 h-auto d-flex flex-column  align-items-center bg-danger p-2 text-dark bg-opacity-10">
+            <h2 class="panq">
+                PANQUEQUES
+            </h2>
+            <img src="../Assets/Images/IMG_5121 2.JPG" alt="panqueques" width="300px">
+       
+    
+            <p class="panq">
+                Para esta receta lo único que vas a necesitar es:        </p>
+                <ul class="panq">
+                    <li>1 banana</li>
+                    <li>2 huevos (o sustituto)</li>
+                    <li>1 y 1/2 taza de avena instantánea</li>
+                    <li>1/2 taza de leche a elección</li>
+                    <li>Extracto de vainilla</li>
+                    <li>Polvo para hornear</li>
+                </ul>
+            
+                <br>
+            <p class="panq">
+                Mezclar bien o licuar todos los ingredientes. Calentar una sartén e ir volcando la preparación de a poco (según el tamaño deseado de los panqueques). Cocinar vuelta y vuelta.
+                Son ideales para acompañar con algún untable de maní o miel y fruta fresca.
+               Esta opción es muy buena para incorporar fibra y aportar saciedad.
+            </p>
+        </div>
+
+
         
-        <p> <strong> Ingredientes: </strong> </p>
-        <ul> 
-            <li type="circle">250 g de harina integral</li>
-            <li type="circle">250 g de harina 000 </li>
-            <li type="circle">250 ml de agua tibia</li>
-            <li type="circle">1 cda de azúcar</li>
-            <li type="circle">50 ml de aceite de oliva</li>
-            <li type="circle">Sal a gusto</li>
-        </ul>
-        <br>
-        <p> <ins> Pasos: </ins> </p>
-        <p> Para el fermento: </ins> </p>
-        <br>
-        <ol type="1">
-            <li>Diluir la levadura en polvo en 100 ml de agua tibia y 1 cda de azúcar. </li>
-            <li>Integrar y dejar tapado hasta que se forma una espuma o burbujas</li>
-        </ol>
-        <br>
-        <p> Para la masa: </ins> </p>
-        <br>
-        <ol type="1">
-            <li>Mezclar las harinas y formar una corona. </li>
-            <li>Agregar la sal por fuera sin que toque la levadura y agregar en el centro el resto del agua tibia, aceite y fermento. </li>
-            <li>Formar una masa y amasar por 10 minutos. Dejar descansar en un bowl tapado hasta que duplique su volumen.</li>
-            <li>Desgasificar la masa y estirar formando un rectángulo. Enrrollar y colocar en un molde. Dejar descansar nuevamente hasta que duplique volumen</li>
-            <li>Cocinar en horno a 180 grados por 35-40 min aprox.</li>
+        <div class="col-md-6 h-auto d-flex flex-column justify-content-center align-items-center bg-warning p-2 text-dark bg-opacity-10">
+            <h2 class="pan">
+                PAN INTEGRAL
+            </h2>
+            <img src="../Assets/Images/IMG_5154.JPG" alt="pan" width="300px">
+    
+                <p class="pan"> Ingredientes: </p>
+            <ul class="pan">
+                <li>250 g de harina 000</li>
+                <li>250 g de harina integral</li>
+                <li>5 g de levadura en polvo</li>
+                <li>250 ml de agua tibia</li>
+                <li>1 cda de azúcar</li>
+                <li>50 ml de aceite de oliva</li>        
+                <li>Sal a gusto</li>
+            </ul>
+    
         
-        </ol>
+    <br>
+            <p class="pan">
+    Para el fermento: diluir la levadura en polvo en 100 ml de agua tibia y 1 cda de azúcar. Integrar y dejar reposar tapado hasta que se forme una espuma o burbujas. 
+    Para la masa: mezclar las harinas y formar una corona. Agregar la sal por fuera sin que toque la levadura y agregar en el centro el resto del agua tibia, aceite y fermento.
+    Formar una masa y amasar por 10 minutos aprox. Dejar descansar en un bowl tapado hasta que duplique su volumen. Luego desgasificar la masa y estirar formando un rectángulo. Enrrollar y colocar en un molde. Dejar nuevamente descansar hasta que duplique volumen y luego cocinar en horno precalentado a 180 grados por 35-40 min aproximandamente.
+            </p>
+        </div>
 
     </section>
-        
+
+
+  
+
+
+
+
+
+
+
+
+
+      
+
+
+
+         
 </main>
-</body>
 
 
-<footer> 
-    <h2 class="texto2"> CONTACTO </h2>
-    <img src="../Assets/Imagenes/Instagram_logo_2016.svg.webp" alt="logo instagram" width=50 class="imgLogo">
-    <img src="../Assets/Imagenes/WhatsApp-logo.png" alt="logo whatsapp" width="90" class="imgLogo">
-    <li class="volverArriba"><a href="Recetas.html"target="_top">Volver Arriba</a></li>
+<footer>
 
+
+    <div class="redes">
+        <a href="https://www.instagram.com/nutricion.ss/" target="_blank" >
+            <img src="../Assets/Images/Instagram_logo_2016.svg.webp" alt="logo instagram" width=50>
+        </a>
+        
+        <a href="https://wa.me/1154676578" target="_blank" >
+            <img src="../Assets/Images/WhatsApp-logo.png" alt="logo whatsapp" width="90">
+        </a>
+    </div>
+
+    <div class="direccion">
+        <p>
+            Av. Luis Maria Campos 559, CABA.
+        </p>
+    </div>
+        
 
 </footer>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-kenU1KFdBIe4zVF0s0G1M5b4hcpxyD9F7jL+jjXkk+Q2h455rYXK/7HAuoJl+0I4" crossorigin="anonymous"></script>
 
+
+
+</body>
 </html>
