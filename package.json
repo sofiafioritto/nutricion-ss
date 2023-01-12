@@ -1,0 +1,25 @@
+{
+  "name": "practica",
+  "version": "1.0.0",
+  "description": "Pagina de nutrición basada en plantas",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "build-css": "node-sass --include-path scss scss/style.scss css/style.css",
+"watch-css": "nodemon -e scss -x \"npm run build-css\""
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/sofiafioritto/nutricion-ss.git"
+  },
+  "author": "Sofia Fioritto",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/sofiafioritto/nutricion-ss/issues"
+  },
+  "homepage": "https://github.com/sofiafioritto/nutricion-ss#readme",
+  "devDependencies": {
+    "node-sass": "^8.0.0",
+    "nodemon": "^2.0.20"
+  }
+}
