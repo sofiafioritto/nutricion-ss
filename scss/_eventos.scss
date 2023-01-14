@@ -1,0 +1,25 @@
+main {
+    padding: 40px;
+
+    .botonInfo{
+        background-color: #999b84a4;
+        font-weight: bold;
+        margin: 20px;
+        padding: 10px;
+     }
+    
+    .textoEvento{
+        font-family: $fuente-titulos;
+        text-align: center;
+    
+    }
+    
+    .textoEvento2{
+        font-family: $fuente-titulos;
+        text-align: center;
+        font-weight: bold;
+        padding: 15px;
+    
+    }
+    
+}
