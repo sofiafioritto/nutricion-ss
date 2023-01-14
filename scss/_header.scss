@@ -28,3 +28,15 @@ header {
     }
    
 }
+
+.img-logo{
+    animation-name: move;
+    animation-duration: 5s;
+    @keyframes move {
+        from {
+            opacity: 0;
+        }to{
+            opacity: 1;
+        }
+ }
+ }
