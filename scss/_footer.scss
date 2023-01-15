@@ -1,5 +1,5 @@
 footer {
-    background-color: #9ac17b85;
+    background-color: map-get($paletaDeColores, "footer");
     width: 100%;
     min-height: 20vh;
     .redes{

@@ -1,2 +1,10 @@
 $background-header: #f4eeed;
 $fuente-titulos: "Noto Serif Sc", serif !important; 
+
+// mapas
+
+$paletaDeColores: (
+    "header": $background-header,
+    "main": #f8f8f4,
+    "footer": #9ac17b85,
+);
