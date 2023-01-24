@@ -15,37 +15,54 @@
 
     <header class="container-fluid">
 
-        <div id="header" class="row h-auto">
+      <div class="row h-auto">
 
-            <div class="d-flex justify-content-center col">
-                <img src="../Assets/Images/LOGO FINAL.png" alt="logo" width="180" class="img-logo">
-            </div>
+        <div class="col-md-6 d-flex justify-content-center" >
+            <img src="../Assets/Images/LOGO FINAL.png" alt="logo" width="180" class="img-logo">
+           
+        </div>
 
-            <div class="d-flex justify-content-center align-items-center col">
-                <h2 id="titulo1" >Nutrición <br>
-                    Plant Based</h2>
-            </div>
+        <div class="col-md-6 h-auto d-flex justify-content-center align-items-center" >
+            <h2 id="titulo1">Nutrición <br>
+                Plant Based</h2>
+        </div>
 
-            <div class="collapse" id="navbarToggleExternalContent">
-                <div id="menuDesplegable" >
-                    <ul>
-                        <li type="none"> <a href="../index.html">Home</a> </li>
-                        <li type="none"> <a href="../Pages/Sobremi.html">Sobre Mí</a> </li>
-                        <li type="none"> <a href="../Pages/Recetas.html">Recetas</a> </li>
-                        <li type="none"> <a href="../Pages/Servicios.html">Servicios</a> </li>
-                        <li type="none"> <a href="../Pages/Eventos.html">Eventos</a> </li>
-                        <li type="none"> <a href="../Pages/Contacto.html">Contacto</a> </li>
-                    </ul>
-                </div>
-              </div>
-
-            <nav  id= "navBar" class="navbar-dark">
-                <div class="container">
-                  <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarToggleExternalContent" aria-controls="navbarToggleExternalContent" aria-expanded="false" aria-label="Toggle navigation">
+            <nav class="navbar navbar-expand-lg bg-light" id="navBar">
+                <div class="container-fluid">
+                  <a class="navbar-brand" href="#">Menú</a>
+                  <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarTogglerDemo02" aria-controls="navbarTogglerDemo02" aria-expanded="false" aria-label="Toggle navigation">
                     <span class="navbar-toggler-icon"></span>
                   </button>
+                  <div class="collapse navbar-collapse" id="navbarTogglerDemo02">
+                    <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                      <li class="nav-item">
+                        <a class="nav-link active" aria-current="page" href="../index.html">Home</a>
+                      </li>
+                      <li class="nav-item">
+                        <a class="nav-link active" aria-current="page" href="./Sobremi.html">About</a>
+                      </li>
+                      <li class="nav-item">
+                        <a class="nav-link active" aria-current="page" href="./Recetas.html">Recetas</a>
+                      </li>
+                      <li class="nav-item">
+                        <a class="nav-link active" aria-current="page" href="./Servicios.html">Servicios</a>
+                      </li>
+                      <li class="nav-item">
+                        <a class="nav-link active" aria-current="page" href="./Eventos.html">Eventos</a>
+                      </li>
+                      <li class="nav-item">
+                        <a class="nav-link active" aria-current="page" href="./Contacto.html">Contacto</a>
+                      </li>
+                    
+        
+                    </ul>
+                    <form class="d-flex" role="search">
+                      <input class="form-control me-2" type="search" placeholder="Buscar" aria-label="Search">
+                      <button id="btnSear" class="btn " type="submit">Buscar</button>
+                    </form>
+                  </div>
                 </div>
-            </nav>
+              </nav>
 
         </div>
 

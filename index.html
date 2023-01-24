@@ -19,37 +19,52 @@
    
     <header class="container-fluid">
 
-        <div id="header" class="row h-auto">
+      <div class="row h-auto">
 
-            <div class="d-flex justify-content-center col" >
-                <img src="./Assets/Images/LOGO FINAL.png" alt="logo" width="180" class="img-logo">
-            </div>
+        <div class="col-md-6 d-flex justify-content-center" >
+            <img src="../Assets/Images/LOGO FINAL.png" alt="logo" width="180" class="img-logo">
+           
+        </div>
 
-            <div class="d-flex justify-content-center align-items-center col">
-                <h2 id="titulo1">Nutrición <br>
-                    Plant Based</h2>
-            </div>
+        <div class="col-md-6 h-auto d-flex justify-content-center align-items-center" >
+            <h2 id="titulo1">Nutrición <br>
+                Plant Based</h2>
+        </div>
 
-            <div class="collapse" id="navbarToggleExternalContent">
-                <div id="menuDesplegable" >
-                    <ul>
-                        <li type="none" class="menu1"> <a href="./index.html">Home</a> </li>
-                        <li type="none"> <a href="./Pages/Sobremi.html">Sobre Mí</a> </li>
-                        <li type="none"> <a href="./Pages/Recetas.html">Recetas</a> </li>
-                        <li type="none"> <a href="./Pages/Servicios.html">Servicios</a> </li>
-                        <li type="none"> <a href="./Pages/Eventos.html">Eventos</a> </li>
-                        <li type="none"> <a href="./Pages/Contacto.html">Contacto</a> </li>
-                    </ul>
-                </div>
-              </div>
-
-            <nav  id= "navBar" class="navbar-dark">
-                <div class="container">
-                  <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarToggleExternalContent" aria-controls="navbarToggleExternalContent" aria-expanded="false" aria-label="Toggle navigation">
+            <nav class="navbar navbar-expand-lg bg-light" id="navBar">
+                <div class="container-fluid">
+                  <a class="navbar-brand" href="#">Menú</a>
+                  <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarTogglerDemo02" aria-controls="navbarTogglerDemo02" aria-expanded="false" aria-label="Toggle navigation">
                     <span class="navbar-toggler-icon"></span>
                   </button>
+                  <div class="collapse navbar-collapse" id="navbarTogglerDemo02">
+                    <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                      <li class="nav-item">
+                        <a class="nav-link active" aria-current="page" href="./index.html">Home</a>
+                      </li>
+                      <li class="nav-item">
+                        <a class="nav-link active" aria-current="page" href="./Pages/Sobremi.html">About</a>
+                      </li>
+                      <li class="nav-item">
+                        <a class="nav-link active" aria-current="page" href="./Pages/Recetas.html">Recetas</a>
+                      </li>
+                      <li class="nav-item">
+                        <a class="nav-link active" aria-current="page" href="./Pages/Servicios.html">Servicios</a>
+                      </li>
+                      <li class="nav-item">
+                        <a class="nav-link active" aria-current="page" href="./Pages/Eventos.html">Eventos</a>
+                      </li>
+                      <li class="nav-item">
+                        <a class="nav-link active" aria-current="page" href="./Pages/Contacto.html">Contacto</a>
+                      </li>
+                    </ul>
+                    <form class="d-flex" role="search">
+                      <input class="form-control me-2" type="search" placeholder="Buscar" aria-label="Search">
+                      <button id="btnSear" class="btn " type="submit">Buscar</button>
+                    </form>
+                  </div>
                 </div>
-            </nav>
+              </nav>
 
         </div>
 
@@ -58,59 +73,186 @@
 <!-- MAIN -->
     
 
-  <main class="mainHome">
+<main class="container-fluid">
 
-<section class="texto1">
-    <p>
-        Mi nombre es Sofía, soy Lic. en Nutrición y especialista en alimentación basada en plantas. Mi objetivo es ayudarte a que puedas trasformar tu alimentación a una más natural y consciente. <br>
-        Dentro de esta página encontrarás información que seguramente te sea útil para iniciar el cambio que estas esperando. <br>
-        En el apartado <a href="./Pages/Servicios.html">Servicios</a> podes encontrar información sobre las modalidades de consulta que ofrecemos.
-        En <a href="./Pages/Recetas.html">Recetas</a> te ayudamos a inspirarte para que pruebes cosas nuevas! <br>
-        No dudes en contactarnos presionando <a href="./Pages/Contacto.html">aquí</a> para evacuar todas tus dudas.
-        Espero que disfrutes el contenido de esta página. <br>
+     <div class="row" id="nutpb1">
+
+      <div class="col-md-6 d-flex flex-column justify-content-center align-self-center ">
+
+        <h1 id="nutpb2">
+          NUTRICIÓN BASADA EN PLANTAS
+      </h1>
+      <br>
+      <p >
+        Mi nombre es Sofía, soy Lic. en Nutrición y especialista en alimentación basada en plantas. 
+        <br> 
+        Mi objetivo es ayudarte a que puedas trasformar tu alimentación a una más natural y consciente. Dentro de esta página encontrarás información que seguramente te sea útil para iniciar el cambio que estas esperando. 
         <br>
-        Lic. Sofía Fioritto <br>
-        MN: 7739 - MP: 3054
-    </p>
-</section>    
+        <br>
+        Existe evidencia acerca de los beneficios de este tipo de alimentación tanto para la salud como para el medioambiente. Un menor consumo de alimentos de origen animal está relacionado con una disminución en el riesgo de contraer enfermedades crónicas no trasnmisibles.
+        <br>
+        <br>
+        En el apartado <a href="./Pages/Servicios.html">Servicios</a> podes encontrar información sobre las modalidades de consulta que ofrecemos. En <a href="./Pages/Recetas.html">Recetas</a> te ayudamos a inspirarte para que pruebes cosas nuevas!  No dudes en contactarnos presionando <a href="./Pages/Contacto.html">aquí</a> para evacuar todas tus dudas. Espero que disfrutes el contenido de esta página. 
+       
+    </p> 
+      </div>
 
-<section id="misImagenes">
-    <div class="caja1">
-        <img src="./Assets/Images/carousel1.JPG" alt="imagenInst" width="200px" class="animate__animated animate__rollIn"  >
-    </div>
-<br>
-    <div class="caja2">
-        <img src="./Assets/Images/carousel2.JPG" alt="imagenInst" width="200px" class="animate__animated animate__rollIn">
-    </div>
+      <div class="col-md-6 d-flex flex-column h-auto justify-content-center justify-self-center justify-item-center align-items-center align-self-center">
+        <div id="carouselExampleControls" class="carousel slide" data-bs-ride="carousel">
+          <div class="carousel-inner">
+            <div class="carousel-item active">
+              <img src="./Assets/Images/carousel1.JPG" class="d-block w-100" alt="img1">
+            </div>
+            <div class="carousel-item">
+              <img src="./Assets/Images/carousel2.JPG" class="d-block w-100" alt="img2">
+            </div>
+            <div class="carousel-item">
+              <img src="./Assets/Images/carousel3.JPG" class="d-block w-100" alt="img3">
+            </div>
+          </div>
+          <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleControls" data-bs-slide="prev">
+            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+            <span class="visually-hidden">Previous</span>
+          </button>
+          <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleControls" data-bs-slide="next">
+            <span class="carousel-control-next-icon" aria-hidden="true"></span>
+            <span class="visually-hidden">Next</span>
+          </button>
+        </div>
+      </div>
+          
+        </div>
+      </div>
+        <br>
+        <br>   
+   
+  <section class="row" id="section2">
+
+    <div id="part1">
+    <h3>
+      ¿Por qué una alimentacion basada en plantas?
+    </h3> 
     <br>
-    <div class="caja3">
-        <img src="./Assets/Images/carousel3.JPG" alt="imagenInst" width="200px" class="animate__animated animate__rollIn">
-    </div>
+
+      <q>
+        Las dietas vegetarianas, incluidas las veganas, planificadas adecuadamente son saludables, nutricionalmente adecuadas y pueden proporcionar beneficios para la salud en la prevención y el tratamiento de ciertas enfermedades. Estas dietas son apropiadas para todas las etapas del ciclo de vida, incluido el embarazo, la lactancia, la infancia, la adolescencia, la edad adulta y para los atletas. 
+        Las dietas basadas en plantas son más sostenibles para el medio ambiente que las dietas ricas en productos animales porque usan menos recursos naturales y están asociadas con mucho menos daño ambiental.
+      </q>
+      <br>
+      <br>
+<p>
+  <strong class="d-flex justify-content-end">
+    Position of the Academy of Nutrition and Dietetics (2002)
+
+  </strong>
+</p>
+</div>
 </section>
 
+<br>
+<br>
 
-    </main>
+<section class="row">
+
+<div class="d-flex flex-column justify-content-center align-items-center">
+  <h3 id="nutrientes">
+    NUTRIENTES ESENCIALES
+  </h3>
+  <br>   
+
+  <p>
+    OMEGA 3: Es un ácido graso esencial. Esto significa que no puede ser sintetizado por el organismo, sino que debe incorporarse a partir de los alimentos. Es antiinflamatorio y protector cardiovascular.
+    Las semillas de lino, chía, nueces y sus aceites son algunos ejemplos de alimentos fuente de este ácido graso. Las semillas se deben consumir SIEMPRE trituradas.
+    <br>
+    <br>
+
+    VITAMINA B12: Es esencial para el correcto funcionamiento del cerebro, del sistema nervioso y la formación de glóbulos rojos.
+    Tanto en una alimentación vegetariana, como en una alimentación vegana, esta vitamina debe ser suplementada o asegurarse su consumo con alimentos fortificados (leches vegetales).
+    No es una vitamina de origen animal.
+    <br>
+    <br>
+
+    HIERRO: Los vegetarianos tienen a menudo una ingesta de hierro similar o incluso un poco mayor que las de los no vegetarianos. No hay evidencia que la prevalencia de anemia sea diferente en la población vegetariana respecto al resto de la población.
+    Algunos alimentos de origen vegetal que aportan hierro son: las legumbres, frutos secos y vegetales de hoja verde.
+    <br>
+    <br>
+
+    CALCIO: En los alimentos existen inhibidores de la absorción de calcio. Por ejemplo, la espinaca y la remolacha tienen ALTAS concentraciones de oxalato, por ende, la absorción del calcio es baja.
+    La ingesta excesiva de sodio, la ingesta de gaseosas cola, la cafeína y el alcohol aumentan la pérdida de calcio por orina. Alimentos como los lácteos, el brócoli, los frutos secos y las legumbres aportan cantidades signficativas de este mineral.
+    <br>
+    <br>
+     
+    ZINC: Las legumbres, los cereales integrales, las semillas y los frutos secos contienen zinc en grandes cantidades. Sin embargo, estos grupos de alimentos tienen elevada cantidad de FITATOS que inhiben su absorción.
+    Las técnicas de remojo, germinación y fermentación aumentan su absorción.
+    <br>
+    <br>
+
+    PROTEINAS: La absorción de las proteínas de origen vegetal, se ve dificultada por la fibra y los fitatos los cuales se encuentran en grandes concentraciones en las legumbres y cereales integrales. Es por eso que se sugiere el remojo y cocción de los mismos. 
+    De todas formas, en una alimentación bien planificada, el déficit de proteínas es poco probable.
+  </p>
+</div>
+</section>
+<br>
+<br>
+
+<section >
+  <div class="row d-flex justify-content-around">
+    <div class="card cardBody" style="width: 20rem;">
+      <img src="./Assets/Images/calcio.JPG" class="card-img-top" alt="calcio">
+      <div class="card-body cardBody">
+        <p class="card-text">Ejemplo de alimentos fuente de <strong> calcio: </strong> brócoli, almendras, semillas de sésamo, kale y tofu.</p>
+      </div>
+    </div>
+  
+  <br>
+  
+  
+    <div class="card cardBody" style="width: 20rem;">
+      <img src="./Assets/Images/hierro.JPG" class="card-img-top" alt="hierro">
+      <div class="card-body cardBody" >
+        <p class="card-text">Ejemplo de alimentos fuente de <strong> hierro: </strong> castañas, amaranto, quinoa y semillas de zapallo.</p>
+      </div>
+    </div>
+  
+  <br>
+  
+    <div class="card cardBody" style="width: 20rem;">
+      <img src="./Assets/Images/omega.JPG" class="card-img-top" alt="omega">
+      <div class="card-body cardBody">
+        <p class="card-text">Ejemplo de alimentos fuente de <strong> omega: </strong> aceites de soja, canola, lino, semillas y nueces.</p>
+      </div>
+    </div>
+  </div>
+</section>
+</main>
+
 
 <!-- FOOTER -->
 
-    <footer>
+    <footer class="container-fluid">
 
+<div class="row">
 
-            <div class="redes">
-                <a href="https://www.instagram.com/nutricion.ss/" target="_blank" >
-                    <img src="./Assets/Images/Instagram_logo_2016.svg.webp" alt="logo instagram" width=50>
-                </a>
-                
-                <a href="https://wa.me/1154676578" target="_blank" >
-                    <img src="./Assets/Images/WhatsApp-logo.png" alt="logo whatsapp" width="90">
-                </a>
-            </div>
-       
-            <div class="direccion">
-                <p>
-                    Av. Luis Maria Campos 559, CABA.
-                </p>
-            </div>
+    <div class="col-md-6" >
+    <p>
+        Av. Luis Maria Campos 559, CABA.
+    </p>
+
+    </div>
+
+  <div class="col-md-6 d-flex justify-content-end align-content-start">
+    <a href="https://www.instagram.com/nutricion.ss/" target="_blank" >
+        <img src="./Assets/Images/Instagram_logo_2016.svg.webp" alt="logo instagram" width=50>
+    </a>
+    
+    <a href="https://wa.me/1154676578" target="_blank" >
+        <img src="./Assets/Images/WhatsApp-logo.png" alt="logo whatsapp" width="90">
+    </a>
+  </div>
+
+</div>
+
+            
                 
 
     </footer>

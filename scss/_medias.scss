@@ -12,9 +12,7 @@
 }
 
 @media (max-width: 768px){
-    header {
-        flex-direction: column;
-    }
+   
 
     .menuGenerico {
         margin: 10px;
@@ -31,20 +29,14 @@
 @media (max-width: 600px){
 
 
-    #titulo1 {
-        font-size: 1.2rem;
-        text-align: center;
-     }
+   
 
     .menuGenerico {
         margin: 10px;
         text-align: center;
     }
 
-    .mainHome{
-        display: flex;
-        flex-direction: column;
-    }
+  
 
     .texto1 {
         display: flex;
@@ -65,15 +57,20 @@
         padding: 10px;
      }
 
-
+#barraNav{
+    flex-direction: column;
+    align-items: center;
+}
 
 }
 
 @media (max-width: 320px){
 
-    #titulo1 {
+    .img-logo {
+        width: 130px;
+     }
+     #titulo1{
         font-size: 1.2rem;
-        text-align: center;
      }
 
     .menuGenerico {
@@ -81,10 +78,7 @@
         text-align: center;
     }
 
-    .mainHome{
-        display: flex;
-        flex-direction: column;
-    }
+  
 
     .texto1 {
         display: flex;
@@ -112,7 +106,7 @@
 /* MIN-WIDTH */
 
 @media (min-width: 320px){
- 
+
     
 
 }

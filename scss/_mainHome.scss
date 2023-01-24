@@ -1,37 +1,56 @@
-.mainHome {
-        background-color: map-get($paletaDeColores, "main");
-        width: 100%;
-        height: 90%;
-        display: grid;
-        grid-template-columns: 1fr 1fr;
-        grid-template-rows: 1fr;
-        grid-template-areas:
-        "texto1 imagen1";
-        grid-column-gap: 10px; 
+main {
+    width: 100%;
+    background-color: map-get($paletaDeColores, "main");
 
-        .imagen1 {
-            grid-area: imagen1;
-            margin: 10px;
-            padding: 10px;
-            width: 290px;
-            justify-self: center;
-        }       
-        .texto1 {
-            grid-area: texto1;
-            font-family: 'Noto Serif SC', serif;
-            margin: 15px;
-            padding: 10px;
-            flex-wrap: wrap;
-            text-align: center;
+    div{
+        h1{
+            font-family: 'Seymour One', sans-serif;
+            padding-left: 10px;
+        }
+    }
+    p{
+        a{
+            color: #b68063
+         }
+          padding-left: 10px;
+        }   
+    }
+    #nutpb1{
+        color: rgba(0, 0, 0, 0.544);
+    }
+    #section2{
+        background-color: #f8f8f4c3;
+        font-family: $fuente-titulos; 
+        margin: 10px;
+        padding: 10px;
         }
 
- #misImagenes {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    margin: 20px;
-}
- }
+    #part1{
+        background-color: #b6806318;
+        width: 100vw;
+        
+    }
+
+    section {
+        .cardBody {
+            background-color: #f8f8f4c3;
+
+        }
+        #nutrientes {
+            margin:10px;
+            padding: 10px;
+            background-color: #b6806358;
+            font-family: $fuente-titulos;
+            p{
+                font-family: $fuente-titulos;
+            }
+        }
+    }
+    
+
+
+
+  
 
 
 

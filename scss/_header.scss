@@ -2,32 +2,36 @@ header {
     background-color: $background-header;
     font-family: $fuente-titulos;
     div {
-       #menuDesplegable{
-        background-color: #999b84a4;
-        margin: 10px;
-        padding: 20px;
-        font-family: $fuente-titulos;
-        a {
-            text-decoration-line: none;
-            color: white;
+        #navBar{
+            font-family: $fuente-titulos;
+            background-color: $background-header !important;
+            a {
+            color: #999b84fa;
             font-weight: bold;
+           
+            &:hover {
+                   color:black;
+            }
+           
+           }
+           #btnSear{
+            background-color: #999b84fa;
+            color:white;
+            font-family: $fuente-titulos;
             &:hover {
                 color:black;
-            }
+         }
         }
-       }
-        img {
-            padding: 10px;
-            margin: 10px;
+           }
         }
-        #navBar{
-            background-color: #999b84a4;
-            padding: 10px;
-           
+     
+         img {
+            padding: 5px;
+             margin: 5px;
         }
     }
    
-}
+
 
 .img-logo{
     animation-name: move;
