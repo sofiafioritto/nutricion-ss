@@ -1,4 +1,9 @@
 main {
+    background-color: map-get($paletaDeColores, "main");
+    #recetMain{
+        padding: 0px;
+        margin: 0px;
+    }
     section{
         .panq{
     @include estilo-recetas;         
@@ -7,6 +12,7 @@ main {
         .pan{
     @include estilo-recetas;         
         }
+        background-color: map-get($paletaDeColores, "main");
     }
 }
 

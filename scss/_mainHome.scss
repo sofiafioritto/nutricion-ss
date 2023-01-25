@@ -9,6 +9,7 @@ main {
         }
     }
     p{
+        font-family: $fuente-titulos;
         a{
             color: #b68063
          }
@@ -34,6 +35,7 @@ main {
     section {
         .cardBody {
             background-color: #f8f8f4c3;
+            font-family: $fuente-titulos;
 
         }
         #nutrientes {

@@ -30,21 +30,12 @@ header {
     opacity: 1; } }
 
 footer {
-  background-color: #9ac17b85;
+  background-color: #9ac17b72;
   width: 100%;
-  min-height: 20vh; }
-  footer .redes {
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    flex-direction: row;
-    padding: 20px; }
-  footer .direccion {
-    align-items: center;
-    display: flex;
-    justify-content: center;
-    font-family: "Kreon", serif;
-    text-align: center; }
+  min-height: 10vh; }
+  footer div p {
+    font-size: 1rem;
+    font-family: "Noto Serif Sc", serif !important; }
 
 main {
   width: 100%;
@@ -53,6 +44,7 @@ main {
     font-family: 'Seymour One', sans-serif;
     padding-left: 10px; }
   main p {
+    font-family: "Noto Serif Sc", serif !important;
     padding-left: 10px; }
     main p a {
       color: #b68063; }
@@ -71,7 +63,8 @@ main {
   width: 100vw; }
 
 section .cardBody {
-  background-color: #f8f8f4c3; }
+  background-color: #f8f8f4c3;
+  font-family: "Noto Serif Sc", serif !important; }
 
 section #nutrientes {
   margin: 10px;
@@ -90,15 +83,21 @@ section #nutrientes {
 .mainHome #fotoSofi {
   width: 350px; }
 
-main section .panq {
-  font-family: "Noto Serif Sc", serif !important;
-  margin-top: 10px;
-  padding: 10px; }
-
-main section .pan {
-  font-family: "Noto Serif Sc", serif !important;
-  margin-top: 10px;
-  padding: 10px; }
+main {
+  background-color: #f8f8f4; }
+  main #recetMain {
+    padding: 0px;
+    margin: 0px; }
+  main section {
+    background-color: #f8f8f4; }
+    main section .panq {
+      font-family: "Noto Serif Sc", serif !important;
+      margin-top: 10px;
+      padding: 10px; }
+    main section .pan {
+      font-family: "Noto Serif Sc", serif !important;
+      margin-top: 10px;
+      padding: 10px; }
 
 main {
   overflow-x: hidden; }
@@ -151,7 +150,10 @@ main {
     padding: 10px; }
   #barraNav {
     flex-direction: column;
-    align-items: center; } }
+    align-items: center; }
+  footer div p {
+    font-size: 0.7rem;
+    font-family: "Noto Serif Sc", serif !important; } }
 
 @media (max-width: 320px) {
   .img-logo {
@@ -174,7 +176,10 @@ main {
     flex-direction: column;
     justify-content: center;
     margin: 10px;
-    padding: 10px; } }
+    padding: 10px; }
+  footer div p {
+    font-size: 0.7rem;
+    font-family: "Noto Serif Sc", serif !important; } }
 
 /* MIN-WIDTH */
 @media (min-width: 600px) {
