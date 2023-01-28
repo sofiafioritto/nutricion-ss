@@ -94,6 +94,12 @@ main {
       font-family: "Noto Serif Sc", serif !important;
       margin-top: 10px;
       padding: 10px; }
+  main .volver {
+    text-decoration: none;
+    color: black;
+    font-family: "Noto Serif Sc", serif !important; }
+    main .volver:hover {
+      color: #9ac17b72; }
 
 main .consultaTexto {
   font-family: 'Noto Serif SC', serif;
@@ -115,8 +121,6 @@ main .btn {
 /* BREAKPOINTS  */
 /* MAX WIDTH */
 @media (max-width: 768px) {
-  .menuGenerico {
-    margin: 10px; }
   #servicios {
     justify-content: space-around;
     margin: 10px;
@@ -129,15 +133,6 @@ main .btn {
   #contactanos2 {
     background-color: #9ac17b72;
     font-family: "Noto Serif Sc", serif !important; }
-  .menuGenerico {
-    margin: 10px;
-    text-align: center; }
-  .texto1 {
-    display: flex;
-    flex-direction: column; }
-  #fotoSofi {
-    display: block;
-    left: 50%; }
   footer div p {
     font-size: 0.7rem;
     font-family: "Noto Serif Sc", serif !important; } }
@@ -145,29 +140,12 @@ main .btn {
 @media (max-width: 320px) {
   .img-logo {
     width: 130px; }
-  #titulo1 {
-    font-size: 1.2rem; }
-  .menuGenerico {
-    margin: 10px;
-    text-align: center; }
-  .texto1 {
-    display: flex;
-    flex-direction: column; }
-  .imagen1 {
-    display: flex;
-    flex-direction: column; }
-  #fotoSofi {
-    width: 290px; }
   footer div p {
     font-size: 0.7rem;
     font-family: "Noto Serif Sc", serif !important; } }
 
 /* MIN-WIDTH */
 @media (min-width: 600px) {
-  .imagen1 {
-    display: flex;
-    flex-direction: column;
-    justify-self: center; }
   #consultanos {
     height: 80vh;
     background-image: linear-gradient(0deg, rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url("../Assets/Images/comsut.png");
@@ -189,12 +167,6 @@ main .btn {
     color: white;
     font-size: 4rem;
     font-weight: bold; } }
-
-@media (min-width: 768px) {
-  .imagen1 {
-    display: flex;
-    flex-direction: column;
-    justify-self: start; } }
 
 main {
   padding: 40px; }

@@ -14,6 +14,15 @@ main {
         }
         background-color: map-get($paletaDeColores, "main");
     }
+  .volver{
+    text-decoration: none;
+    color:black;
+    font-family: $fuente-titulos;
+    &:hover {
+        color: map-get($paletaDeColores, "footer");
+ }
+  }
+
 }
 
 
