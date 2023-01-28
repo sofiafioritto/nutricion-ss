@@ -1,53 +1,27 @@
 main {
 
     .texto4{
-        display: flex;
-        flex-direction: column;
-        align-items: center;
-        justify-content: center;
-        margin: 10px;
-        padding: 10px;
+        margin: 5px;
+        padding: 5px;
         font-family: 'Noto Serif SC', serif;
-        text-align: center;
-    
     }
     
-.texto40{
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
-    margin: 10px;
-    padding: 10px;
-    font-family: 'Noto Serif SC', serif;
-    text-align: center;
-    font-size: 1.2rem;
 
-}
 #contactanos {
-    display: flex;
-    align-items: center;
-    justify-content: center;
+    
     margin-top: 15px;
     font-family: 'Noto Serif SC', serif;
 
 }
-.form {
-    margin: 5px;
-    padding: 5px;
-    display: inline-block;
-}
+
 
 .btn0 {
     background-color: #f4eeed;
     padding: 10px;
     margin: 10px;
-    display: inline-block;
     font-weight: bold;
     position: relative;
-    left: 45%;
-   
-    
+    border-radius: 15px;    
 
 }
 

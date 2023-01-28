@@ -13,8 +13,7 @@
 
 @media (max-width: 768px){
    
-
-    .menuGenerico {
+.menuGenerico {
         margin: 10px;
     }
 
@@ -23,20 +22,24 @@
     margin: 10px;
     padding: 10px;
  }
-
 }
 
 @media (max-width: 600px){
 
+    #consultanos2{
+        background-color: map-get($paletaDeColores, "footer" );
+        font-family: $fuente-titulos;
+     }
 
-   
+     #contactanos2{
+        background-color: map-get($paletaDeColores, "footer" );
+        font-family: $fuente-titulos;
+     }
 
     .menuGenerico {
         margin: 10px;
         text-align: center;
     }
-
-  
 
     .texto1 {
         display: flex;
@@ -49,18 +52,7 @@
        left:50%;
     }
 
-    #servicios {
-        display: flex;
-        flex-direction: column;
-        align-items: center;
-        margin: 10px;
-        padding: 10px;
-     }
 
-#barraNav{
-    flex-direction: column;
-    align-items: center;
-}
 footer {
      
     div{
@@ -103,13 +95,7 @@ footer {
         width: 290px;
     }
 
-    #servicios {
-        display: flex;
-        flex-direction: column;
-        justify-content: center;
-        margin: 10px;
-        padding: 10px;
-     }
+   
 
      footer {
      
@@ -140,11 +126,6 @@ footer {
     }  
 
     #consultanos{
-        display: flex;
-        align-items: center;
-        justify-content: center;
-        text-align: center;
-        flex-direction: column;
         height: 80vh;
         background-image: linear-gradient(
             0deg,
@@ -155,22 +136,17 @@ footer {
         background-repeat: no-repeat;
         background-size: cover;
         background-position: center center;
-        
-        
     }
     
     #consultanos2{
         color: white;
         font-size: 4rem;
         font-weight: bold;
+        font-family: $fuente-titulos;
+        
     }
 
     #contactanos{
-        display: flex;
-        align-items: center;
-        justify-content: center;
-        text-align: center;
-        flex-direction: column;
         height: 80vh;
         background-image: linear-gradient(
             0deg,

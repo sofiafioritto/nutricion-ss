@@ -1,12 +1,4 @@
 main {
-        overflow-x: hidden;
-
-        #servicios {
-            display: flex;
-            justify-content: space-around;
-            margin: 50px;
-            padding: 50px;
-         }    
          .consultaTexto{
             font-family: 'Noto Serif SC', serif;
             text-align: center;
@@ -18,18 +10,16 @@ main {
             text-align: center;
             
          }
-         .btn {
-            background-color: #f4eeed;
-            padding: 10px;
-            margin: 10px;
-            display: flex;
-            justify-content: center;
-            align-items: center;
-            font-weight: bold;
-        
+       .btn {
+      background-color: #f4eeed;
+      padding: 10px;
+      margin: 10px;
+      font-weight: bold;
+      &:hover {
+         color: map-get($paletaDeColores, "footer" );
+            }
         }
-        
-         
 
+      
     }
 

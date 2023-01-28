@@ -65,6 +65,8 @@ main {
 section .cardBody {
   background-color: #f8f8f4c3;
   font-family: "Noto Serif Sc", serif !important; }
+  section .cardBody:hover {
+    transform: scale(1.1); }
 
 section #nutrientes {
   margin: 10px;
@@ -74,14 +76,8 @@ section #nutrientes {
   section #nutrientes p {
     font-family: "Noto Serif Sc", serif !important; }
 
-.mainHome #textoSofi {
-  display: flex;
-  text-align: justify;
-  margin: 50px;
+main #textoSofi {
   font-family: 'Noto Serif SC', serif; }
-
-.mainHome #fotoSofi {
-  width: 350px; }
 
 main {
   background-color: #f8f8f4; }
@@ -99,28 +95,22 @@ main {
       margin-top: 10px;
       padding: 10px; }
 
-main {
-  overflow-x: hidden; }
-  main #servicios {
-    display: flex;
-    justify-content: space-around;
-    margin: 50px;
-    padding: 50px; }
-  main .consultaTexto {
-    font-family: 'Noto Serif SC', serif;
-    text-align: center; }
-  main .consultaTexto2 {
-    font-weight: bold;
-    font-family: 'Noto Serif SC', serif;
-    text-align: center; }
-  main .btn {
-    background-color: #f4eeed;
-    padding: 10px;
-    margin: 10px;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    font-weight: bold; }
+main .consultaTexto {
+  font-family: 'Noto Serif SC', serif;
+  text-align: center; }
+
+main .consultaTexto2 {
+  font-weight: bold;
+  font-family: 'Noto Serif SC', serif;
+  text-align: center; }
+
+main .btn {
+  background-color: #f4eeed;
+  padding: 10px;
+  margin: 10px;
+  font-weight: bold; }
+  main .btn:hover {
+    color: #9ac17b72; }
 
 /* BREAKPOINTS  */
 /* MAX WIDTH */
@@ -133,6 +123,12 @@ main {
     padding: 10px; } }
 
 @media (max-width: 600px) {
+  #consultanos2 {
+    background-color: #9ac17b72;
+    font-family: "Noto Serif Sc", serif !important; }
+  #contactanos2 {
+    background-color: #9ac17b72;
+    font-family: "Noto Serif Sc", serif !important; }
   .menuGenerico {
     margin: 10px;
     text-align: center; }
@@ -142,15 +138,6 @@ main {
   #fotoSofi {
     display: block;
     left: 50%; }
-  #servicios {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    margin: 10px;
-    padding: 10px; }
-  #barraNav {
-    flex-direction: column;
-    align-items: center; }
   footer div p {
     font-size: 0.7rem;
     font-family: "Noto Serif Sc", serif !important; } }
@@ -171,12 +158,6 @@ main {
     flex-direction: column; }
   #fotoSofi {
     width: 290px; }
-  #servicios {
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    margin: 10px;
-    padding: 10px; }
   footer div p {
     font-size: 0.7rem;
     font-family: "Noto Serif Sc", serif !important; } }
@@ -188,11 +169,6 @@ main {
     flex-direction: column;
     justify-self: center; }
   #consultanos {
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    text-align: center;
-    flex-direction: column;
     height: 80vh;
     background-image: linear-gradient(0deg, rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url("../Assets/Images/comsut.png");
     background-repeat: no-repeat;
@@ -201,13 +177,9 @@ main {
   #consultanos2 {
     color: white;
     font-size: 4rem;
-    font-weight: bold; }
+    font-weight: bold;
+    font-family: "Noto Serif Sc", serif !important; }
   #contactanos {
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    text-align: center;
-    flex-direction: column;
     height: 80vh;
     background-image: linear-gradient(0deg, rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url("../Assets/Images/06_CONTACTO_VIVUS-612x344.jpg");
     background-repeat: no-repeat;
@@ -226,11 +198,15 @@ main {
 
 main {
   padding: 40px; }
-  main .botonInfo {
-    background-color: #999b84a4;
-    font-weight: bold;
-    margin: 20px;
-    padding: 10px; }
+  main .btn2 {
+    background-color: #dcd2d0;
+    padding: 8px;
+    margin: 8px;
+    border-radius: 15px;
+    font-family: "Noto Serif Sc", serif !important;
+    cursor: pointer; }
+    main .btn2:hover {
+      color: white; }
   main .textoEvento {
     font-family: "Noto Serif Sc", serif !important;
     text-align: center; }
@@ -241,43 +217,18 @@ main {
     padding: 15px; }
 
 main .texto4 {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  margin: 10px;
-  padding: 10px;
-  font-family: 'Noto Serif SC', serif;
-  text-align: center; }
-
-main .texto40 {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  margin: 10px;
-  padding: 10px;
-  font-family: 'Noto Serif SC', serif;
-  text-align: center;
-  font-size: 1.2rem; }
-
-main #contactanos {
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  margin-top: 15px;
-  font-family: 'Noto Serif SC', serif; }
-
-main .form {
   margin: 5px;
   padding: 5px;
-  display: inline-block; }
+  font-family: 'Noto Serif SC', serif; }
+
+main #contactanos {
+  margin-top: 15px;
+  font-family: 'Noto Serif SC', serif; }
 
 main .btn0 {
   background-color: #f4eeed;
   padding: 10px;
   margin: 10px;
-  display: inline-block;
   font-weight: bold;
   position: relative;
-  left: 45%; }
+  border-radius: 15px; }

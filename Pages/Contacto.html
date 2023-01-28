@@ -68,59 +68,69 @@
         </div>
 
     </header>
+    
+<!-- MAIN -->
 
-    <main class="mainContacto">
+    <main class="container-fluid">
 
-        <section id="contactanos" class="animate__animated animate__slideInLeft">
-            <h1 id="contactanos2"> CONTACTO </h1>
+      <div class="row">
+        <section class="col-md-12 d-flex flex-column justify-content-center">
+          <div id="contactanos" class="animate__animated animate__slideInLeft d-flex align-items-center justify-content-center">
+           <h1 id="contactanos2"> CONTACTO </h1>
+          </div>   
         </section>
+      </div>
+
+      <br>
+      <br>
+  
+       <div class="container-fluid">
+        <section class="row">
+          <p class="d-flex flex-column justify-content-center align-items-center" >
+              Para más información acerca de las consultas o talleres, complete el formulario y lo estaremos contactando a la brevedad.
+          </p>
+       </section>
+
+      <section class="texto4 col-md-12 d-flex flex-column justify-content-center align-items-center">
+      <div > 
+              <legend> <strong>Datos Personales</strong>  </legend>
+  
+              <form class="form"> 
+               <label for="Nombre"> Nombre</label>
+               <input type="text" id="Nombre" placeholder="Ingrese su Nombre"> 
+  <br>
+  <br>
+               <label for="Apellido"> Apellido </label> 
+               <input type="text" id="Apellido" placeholder="Ingrese su Apellido">
+  <br>
+  <br>
+               <label for="Email"> Email</label> 
+               <input type="email" id="Email" placeholder="Ingrese su Correo Electrónico"> 
+  <br>
+  <br>
+               <input type="radio" id="virtual" name="consulta" value="virtual">
+               <label for="virtual"> Consulta Virtual</label>
+  <br>
+               <input type="radio" id="presencial" name="consulta" value="presencial">
+               <label for="presencial"> Consulta Presencial</label> <br>
+               <br>
+               Comentarios: <br>
+               <textarea name="mensaje" id="Comentarios" cols="30" rows="10"></textarea>
+               <br>
+      </div>
+
+      <form>
+        <input type="submit" value="Enviar" class="btn0" >
+    </form>
+  </section>
+  
+       </div>
+
        
-
-        <section class="texto40">
-            <p  >
-                Para más información acerca de las consultas o talleres, complete el formulario y lo estaremos contactando a la brevedad.
-            </p>
-        </section>
-    <section class="texto4" id="formulario">
-        <div > 
-            <fieldset class="form"> 
-                <legend> <strong>Datos Personales</strong>  </legend>
-    
-                <form class="form"> 
-                 <label for="Nombre"> Nombre</label>
-                 <input type="text" id="Nombre" placeholder="Ingrese su Nombre"> 
-    <br>
-    <br>
-                 <label for="Apellido"> Apellido </label> 
-                 <input type="text" id="Apellido" placeholder="Ingrese su Apellido">
-    <br>
-    <br>
-                 <label for="Email"> Email</label> 
-                 <input type="email" id="Email" placeholder="Ingrese su Correo Electrónico"> 
-    <br>
-    <br>
-                 <input type="radio" id="virtual" name="consulta" value="virtual">
-                 <label for="virtual"> Consulta Virtual</label>
-    <br>
-                 <input type="radio" id="presencial" name="consulta" value="presencial">
-                 <label for="presencial"> Consulta Presencial</label> <br>
-                 <br>
-                 Comentarios: <br>
-                 <textarea name="mensaje" id="Comentarios" cols="30" rows="10"></textarea>
-                 <br>
-            </fieldset>
-        </div>
-    </section>
-    
-        <section> 
-           
-                <form>
-                    <input type="submit" value="Enviar" class="btn0" >
-                </form>
-    
-        </section>
         
     </main>
+
+    <!-- FOOTER -->
 
     <footer class="container-fluid">
 

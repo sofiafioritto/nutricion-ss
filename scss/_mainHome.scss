@@ -36,7 +36,11 @@ main {
         .cardBody {
             background-color: #f8f8f4c3;
             font-family: $fuente-titulos;
-
+            &:hover {
+                transform: scale(1.1);
+         }
+            
+        
         }
         #nutrientes {
             margin:10px;

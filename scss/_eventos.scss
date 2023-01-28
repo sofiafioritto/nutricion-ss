@@ -1,12 +1,17 @@
 main {
     padding: 40px;
 
-    .botonInfo{
-        background-color: #999b84a4;
-        font-weight: bold;
-        margin: 20px;
-        padding: 10px;
-     }
+    .btn2 {
+        background-color: #dcd2d0;
+        padding: 8px;
+        margin: 8px;
+        border-radius: 15px;
+        font-family: $fuente-titulos;
+        cursor: pointer;
+        &:hover {
+           color: white;
+              }
+          }
     
     .textoEvento{
         font-family: $fuente-titulos;
