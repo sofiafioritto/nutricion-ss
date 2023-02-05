@@ -16,10 +16,15 @@ main {
     }
   .volver{
     text-decoration: none;
-    color:black;
+    color:white;
     font-family: $fuente-titulos;
+    background-color: #b6968dd2;
+    border: solid;
+    padding: 10px;
+    margin: 5px;
+
     &:hover {
-        color: map-get($paletaDeColores, "footer");
+        color: black;
  }
   }
 

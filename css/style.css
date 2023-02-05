@@ -37,17 +37,15 @@ footer {
     font-size: 1rem;
     font-family: "Noto Serif Sc", serif !important; }
 
-main {
-  width: 100%;
-  background-color: #f8f8f4; }
-  main div h1 {
-    font-family: 'Seymour One', sans-serif;
-    padding-left: 10px; }
-  main p {
-    font-family: "Noto Serif Sc", serif !important;
-    padding-left: 10px; }
-    main p a {
-      color: #b68063; }
+main div h1 {
+  font-family: 'Seymour One', sans-serif;
+  padding-left: 10px; }
+
+main p {
+  font-family: "Noto Serif Sc", serif !important;
+  padding-left: 10px; }
+  main p a {
+    color: #b68063; }
 
 #nutpb1 {
   color: rgba(0, 0, 0, 0.544); }
@@ -96,10 +94,14 @@ main {
       padding: 10px; }
   main .volver {
     text-decoration: none;
-    color: black;
-    font-family: "Noto Serif Sc", serif !important; }
+    color: white;
+    font-family: "Noto Serif Sc", serif !important;
+    background-color: #b6968dd2;
+    border: solid;
+    padding: 10px;
+    margin: 5px; }
     main .volver:hover {
-      color: #9ac17b72; }
+      color: black; }
 
 main .consultaTexto {
   font-family: 'Noto Serif SC', serif;
@@ -111,10 +113,11 @@ main .consultaTexto2 {
   text-align: center; }
 
 main .btn {
-  background-color: #f4eeed;
+  background-color: #b6968dd2;
   padding: 10px;
   margin: 10px;
-  font-weight: bold; }
+  font-weight: bold;
+  color: white; }
   main .btn:hover {
     color: #9ac17b72; }
 
@@ -168,25 +171,26 @@ main .btn {
     font-size: 4rem;
     font-weight: bold; } }
 
-main {
-  padding: 40px; }
-  main .btn2 {
-    background-color: #dcd2d0;
-    padding: 8px;
-    margin: 8px;
-    border-radius: 15px;
-    font-family: "Noto Serif Sc", serif !important;
-    cursor: pointer; }
-    main .btn2:hover {
-      color: white; }
-  main .textoEvento {
-    font-family: "Noto Serif Sc", serif !important;
-    text-align: center; }
-  main .textoEvento2 {
-    font-family: "Noto Serif Sc", serif !important;
-    text-align: center;
-    font-weight: bold;
-    padding: 15px; }
+main .btn2 {
+  background-color: #b6968dd2;
+  padding: 8px;
+  margin: 8px;
+  border-radius: 15px;
+  font-family: "Noto Serif Sc", serif !important;
+  color: white;
+  cursor: pointer; }
+  main .btn2:hover {
+    color: black; }
+
+main .textoEvento {
+  font-family: "Noto Serif Sc", serif !important;
+  text-align: center; }
+
+main .textoEvento2 {
+  font-family: "Noto Serif Sc", serif !important;
+  text-align: center;
+  font-weight: bold;
+  padding: 15px; }
 
 main .texto4 {
   margin: 5px;
@@ -198,7 +202,7 @@ main #contactanos {
   font-family: 'Noto Serif SC', serif; }
 
 main .btn0 {
-  background-color: #f4eeed;
+  background-color: #b6968dd2;
   padding: 10px;
   margin: 10px;
   font-weight: bold;

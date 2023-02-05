@@ -1,15 +1,17 @@
 main {
-    padding: 40px;
+
+
 
     .btn2 {
-        background-color: #dcd2d0;
+        background-color: #b6968dd2;
         padding: 8px;
         margin: 8px;
         border-radius: 15px;
         font-family: $fuente-titulos;
+        color:white;
         cursor: pointer;
         &:hover {
-           color: white;
+           color: black;
               }
           }
     

@@ -11,10 +11,11 @@ main {
             
          }
        .btn {
-      background-color: #f4eeed;
+      background-color: #b6968dd2;
       padding: 10px;
       margin: 10px;
       font-weight: bold;
+      color: white;
       &:hover {
          color: map-get($paletaDeColores, "footer" );
             }
